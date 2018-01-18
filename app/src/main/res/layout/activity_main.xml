@@ -34,20 +34,20 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Rock"
-                android:onClick="rockD" />
+                android:onClick="chooseRockD"
+                android:text="Rock" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Paper"
-                android:onClick="paperD"/>
+                android:onClick="choosePaperD"
+                android:text="Paper" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Scissors"
-                android:onClick="scissorsD"/>
+                android:onClick="chooseScissorsD"
+                android:text="Scissors" />
 
         </LinearLayout>
 
@@ -74,20 +74,20 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Rock"
-                android:onClick="rockS"/>
+                android:onClick="chooseRockS"
+                android:text="Rock" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Paper"
-                android:onClick="paperS"/>
+                android:onClick="choosePaperS"
+                android:text="Paper" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Scissors"
-                android:onClick="scissorsS"/>
+                android:onClick="chooseScissorsS"
+                android:text="Scissors" />
 
         </LinearLayout>
 
@@ -99,7 +99,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/layout_1"
         android:gravity="center"
-        android:text="info"/>
+        android:text="info" />
 
     <ImageView
         android:layout_width="match_parent"
@@ -113,16 +113,16 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
-        android:text="Reset"
-        android:onClick="reset"/>
+        android:onClick="reset"
+        android:text="Reset" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/reset_button"
         android:layout_centerInParent="true"
-        android:text="Check"
-        android:onClick="check"/>
+        android:onClick="check"
+        android:text="Check" />
 
 
 </RelativeLayout>
