@@ -9,7 +9,8 @@
         android:id="@+id/layout_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:background="#ffffc3">
 
         <LinearLayout
             android:layout_width="0dp"
@@ -99,12 +100,14 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/layout_1"
         android:gravity="center"
-        android:text="info" />
+        android:text="info"
+        android:background="#ffffc3" />
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/info"
+        android:scaleType="centerCrop"
         android:src="@drawable/face_to_face" />
 
     <Button
@@ -112,15 +115,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"
+        android:layout_alignParentRight="true"
         android:onClick="reset"
         android:text="Reset" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/reset_button"
-        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
         android:onClick="check"
         android:text="Check" />
 
