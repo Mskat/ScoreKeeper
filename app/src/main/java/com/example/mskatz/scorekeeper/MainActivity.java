@@ -46,13 +46,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void check(View v) {
-        String spidermanWin = "Point to Spider-Man!";
-        String deadpoolWin = "Point to Deadpool!";
+        String spidermanWin = "Point to Spider-Man !";
+        String deadpoolWin = "Point to Deadpool !";
 
         if (choiceS == null || choiceD == null) {
             displayInfo("Your move...");
         } else if (choiceD.equals(choiceS)) {
-            displayInfo("Draw!");
+            displayInfo("Draw !");
         } else if (choiceD.equals("rock")) {
             if (choiceS.equals("paper")) {
                 addScoreS(scoreS);
@@ -99,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
         choiceS = null;
         displayScoreD(scoreD);
         displayScoreS(scoreS);
-        displayInfo("Let's start!");
+        displayInfo("Let's start !");
     }
 
     public void displayScoreD(int score) {
