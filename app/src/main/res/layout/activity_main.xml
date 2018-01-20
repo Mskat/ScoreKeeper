@@ -9,8 +9,8 @@
         android:id="@+id/layout_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="#ffffc3">
+        android:background="#ffffc3"
+        android:orientation="horizontal">
 
         <LinearLayout
             android:layout_width="0dp"
@@ -21,60 +21,60 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="deadpool"
-                android:textStyle="bold"
-                android:textSize="16sp"
                 android:layout_margin="16dp"
                 android:fontFamily="casual"
+                android:gravity="center"
+                android:text="@string/deadpool"
+                android:textAllCaps="true"
                 android:textColor="#67694D"
-                android:textAllCaps="true" />
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/score_Deadpool"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="casual"
                 android:gravity="center"
-                android:fontFamily="casual"
-                android:textSize="56sp"
+                android:text="@string/deadpool_score"
                 android:textColor="#67694D"
-                android:text="0" />
+                android:textSize="66sp" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="casual"
                 android:onClick="chooseRockD"
-                android:textStyle="bold"
-                android:fontFamily="casual"
-                android:layout_marginTop="8dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
+                android:text="@string/deadpool_rock"
                 android:textColor="#323326"
-                android:text="Rock" />
+                android:textStyle="bold" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="casual"
                 android:onClick="choosePaperD"
-                android:fontFamily="casual"
+                android:text="@string/deadpool_paper"
                 android:textColor="#323326"
-                android:layout_marginTop="8dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
-                android:textStyle="bold"
-                android:text="Paper" />
+                android:textStyle="bold" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="chooseScissorsD"
-                android:fontFamily="casual"
-                android:textColor="#323326"
-                android:layout_marginTop="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:textStyle="bold"
-                android:text="Scissors" />
+                android:layout_marginTop="8dp"
+                android:fontFamily="casual"
+                android:onClick="chooseScissorsD"
+                android:text="@string/deadpool_scissors"
+                android:textColor="#323326"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
@@ -82,7 +82,7 @@
             android:layout_width="1dp"
             android:layout_height="match_parent"
             android:layout_marginTop="16dp"
-            android:background="#67694D"/>
+            android:background="#67694D" />
 
         <LinearLayout
             android:layout_width="0dp"
@@ -93,59 +93,59 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="Spider-Man"
-                android:textStyle="bold"
-                android:textSize="16sp"
                 android:layout_margin="16dp"
                 android:fontFamily="casual"
+                android:gravity="center"
+                android:text="@string/spider_man"
+                android:textAllCaps="true"
                 android:textColor="#67694D"
-                android:textAllCaps="true" />
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/score_SpiderMan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="casual"
                 android:gravity="center"
-                android:fontFamily="casual"
-                android:textSize="56sp"
-                android:text="0" />
+                android:text="@string/spider_man_score"
+                android:textSize="66sp" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="casual"
                 android:onClick="chooseRockS"
-                android:textStyle="bold"
+                android:text="@string/spider_man_rock"
                 android:textColor="#323326"
-                android:layout_marginTop="8dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
-                android:fontFamily="casual"
-                android:text="Rock" />
+                android:textStyle="bold" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="casual"
                 android:onClick="choosePaperS"
-                android:textStyle="bold"
+                android:text="@string/spider_man_paper"
                 android:textColor="#323326"
-                android:layout_marginTop="8dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
-                android:fontFamily="casual"
-                android:text="Paper" />
+                android:textStyle="bold" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="chooseScissorsS"
-                android:textStyle="bold"
-                android:layout_marginTop="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:textColor="#323326"
+                android:layout_marginTop="8dp"
                 android:fontFamily="casual"
-                android:text="Scissors" />
+                android:onClick="chooseScissorsS"
+                android:text="@string/spider_man_scissors"
+                android:textColor="#323326"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
@@ -156,14 +156,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/layout_1"
-        android:gravity="center"
-        android:text="Let's play..."
-        android:textStyle="bold"
-        android:textSize="16sp"
-        android:padding="8dp"
+        android:background="#ffffc3"
         android:fontFamily="casual"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/let_s_start"
+        android:textAllCaps="true"
         android:textColor="#67694D"
-        android:background="#ffffc3" />
+        android:textSize="16sp"
+        android:textStyle="bold" />
 
     <ImageView
         android:layout_width="match_parent"
@@ -177,25 +178,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:onClick="reset"
-        android:textStyle="bold"
-        android:textColor="#323326"
+        android:layout_alignParentEnd="true"
         android:layout_margin="8dp"
         android:fontFamily="casual"
-        android:text="Reset" />
+        android:onClick="resetScore"
+        android:text="@string/reset_score"
+        android:textColor="#323326"
+        android:textStyle="bold" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:onClick="check"
+        android:layout_alignParentStart="true"
         android:layout_margin="8dp"
-        android:textStyle="bold"
-        android:textColor="#323326"
         android:fontFamily="casual"
-        android:text="Check" />
-
+        android:onClick="checkWhoWin"
+        android:text="@string/check_who_win"
+        android:textColor="#323326"
+        android:textStyle="bold" />
 
 </RelativeLayout>

@@ -5,9 +5,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import java.util.Objects;
-
-
 public class MainActivity extends AppCompatActivity {
 
     String choiceD = null;
@@ -45,18 +42,19 @@ public class MainActivity extends AppCompatActivity {
         choiceS = "scissors";
     }
 
-    public void check(View v) {
-        String spidermanWin = "Point to Spider-Man !";
-        String deadpoolWin = "Point to Deadpool !";
+    public void checkWhoWin(View v) {
+
+        String spiderManWin = "Point to Spider-Man";
+        String deadpoolWin = "Point to Deadpool";
 
         if (choiceS == null || choiceD == null) {
             displayInfo("Your move...");
         } else if (choiceD.equals(choiceS)) {
-            displayInfo("Draw !");
+            displayInfo("Draw");
         } else if (choiceD.equals("rock")) {
             if (choiceS.equals("paper")) {
                 addScoreS(scoreS);
-                displayInfo(spidermanWin);
+                displayInfo(spiderManWin);
             } else if (choiceS.equals("scissors")) {
                 addScoreD(scoreD);
                 displayInfo(deadpoolWin);
@@ -64,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
         } else if (choiceD.equals("paper")) {
             if (choiceS.equals("scissors")) {
                 addScoreS(scoreS);
-                displayInfo(spidermanWin);
+                displayInfo(spiderManWin);
             } else if (choiceS.equals("rock")) {
                 addScoreD(scoreD);
                 displayInfo(deadpoolWin);
@@ -72,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
         } else if (choiceD.equals("scissors")) {
             if (choiceS.equals("rock")) {
                 addScoreS(scoreS);
-                displayInfo(spidermanWin);
+                displayInfo(spiderManWin);
             } else {
                 addScoreD(scoreD);
                 displayInfo(deadpoolWin);
@@ -92,14 +90,14 @@ public class MainActivity extends AppCompatActivity {
         displayScoreS(scoreS);
     }
 
-    public void reset(View v) {
+    public void resetScore(View v) {
         scoreS = 0;
         scoreD = 0;
         choiceD = null;
         choiceS = null;
         displayScoreD(scoreD);
         displayScoreS(scoreS);
-        displayInfo("Let's start !");
+        displayInfo("Let's start...");
     }
 
     public void displayScoreD(int score) {
