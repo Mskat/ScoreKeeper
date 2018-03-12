@@ -107,9 +107,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="casual"
-                android:textColor="@color/text_color"
                 android:gravity="center"
                 android:text="@string/spider_man_score"
+                android:textColor="@color/text_color"
                 android:textSize="@dimen/text_size_66sp" />
 
             <Button

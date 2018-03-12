@@ -3,6 +3,8 @@
     <dimen name="margin_size_8dp">8dp</dimen>
     <dimen name="margin_size_16dp">16dp</dimen>
     <dimen name="margin_size_24dp">24dp</dimen>
+    <dimen name="max_height_150_dp">150dp</dimen>
+    <dimen name="max_height_450_dp">450dp</dimen>
     <dimen name="padding_size_8dp">8dp</dimen>
     <dimen name="text_size_16sp">16sp</dimen>
     <dimen name="text_size_66sp">66sp</dimen>
