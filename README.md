@@ -1,5 +1,5 @@
 # ScoreKeeper
-An app created as part of the Google Developer Challenge Scholarship program: Android basics. Third app created based on the skills got during the scholarship.
+An app created as part of the Google Developer Challenge Scholarship program: Android basics. Then the app was improve as part of the Google Developer Android Basics Nanodegree Scholarship.
 
 You start by choose one of options: rock, paper or scissors, separetly for Deadpool and Spider-Man. 
 Next you press check button and then you will see an message who is win and also you will notice that score for this team will increase. 
