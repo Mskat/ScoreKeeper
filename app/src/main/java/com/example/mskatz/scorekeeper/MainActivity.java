@@ -8,9 +8,9 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     //Stores an information about Deadpool's choice
-    String choiceD = null;
+    String choiceD = "";
     //Stores an information about Spider-Man's choice
-    String choiceS = null;
+    String choiceS = "";
     //general Spider-Man's score
     int scoreS = 0;
     //general Deadpool's score
@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
         String spiderManWin = "Point to Spider-Man";
         String deadpoolWin = "Point to Deadpool";
 
-        if (choiceS == null || choiceD == null) {
+        if (choiceS.equals("") || choiceD.equals("")) {
             displayInfo("Your move...");
         } else if (choiceD.equals(choiceS)) {
             displayInfo("Draw");
@@ -87,8 +87,8 @@ public class MainActivity extends AppCompatActivity {
                 displayInfo(deadpoolWin);
             }
         }
-        choiceD = null;
-        choiceS = null;
+        choiceD = "";
+        choiceS = "";
     }
 
     //Adds one point to general Deadpool's score
@@ -107,8 +107,8 @@ public class MainActivity extends AppCompatActivity {
     public void resetScore(View v) {
         scoreS = 0;
         scoreD = 0;
-        choiceD = null;
-        choiceS = null;
+        choiceD = "";
+        choiceS = "";
         displayScoreD(scoreD);
         displayScoreS(scoreS);
         displayInfo("Let's start...");
@@ -130,5 +130,27 @@ public class MainActivity extends AppCompatActivity {
     public void displayInfo(String info) {
         TextView infoView = findViewById(R.id.info);
         infoView.setText(info);
+    }
+
+    /**
+     * This method is called right before we change orientation and preserves the score value
+     */
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt("scoreS", scoreS);
+        outState.putInt("scoreD", scoreD);
+    }
+
+    /**
+     * This method is called after we change orientation and displaying the score values which are saved before change orientation
+     */
+    @Override
+    protected void onRestoreInstanceState(Bundle saveInstanceState) {
+        super.onRestoreInstanceState(saveInstanceState);
+        scoreS = saveInstanceState.getInt("scoreS");
+        scoreD = saveInstanceState.getInt("scoreD");
+        displayScoreS(scoreS);
+        displayScoreD(scoreD);
     }
 }
